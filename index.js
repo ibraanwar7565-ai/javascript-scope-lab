@@ -1,23 +1,18 @@
 // Write your solution in this file!
 
-// Global scope - array with hamburger and cheeseburger
-var burgerMenu = ["hamburger", "cheeseburger"];
+const burgers = ['Hamburger', 'Cheeseburger'];
 
-// Global scope - featured drink string
-var featuredDrink = "chocolate milkshake";
+let featuredDrink = 'Strawberry Milkshake';
 
-// Function scope - getFeaturedMilkshake
-function getFeaturedMilkshake() {
-  var featuredMilkshake = featuredDrink;
-  featuredMilkshake = "strawberry milkshake";
-  return featuredMilkshake;
+function addBurger() {
+  const newBurger = 'Flatburger';
+  burgers.push(newBurger);
+  if(true) {
+    const anotherNewBurger = 'Maple Bacon Burger';
+    burgers.push(anotherNewBurger);
+  }
 }
 
-// Block scope - addBurger
-function addBurger() {
-  if (true) {
-    let newBurger = "veggie burger";
-    burgerMenu.push(newBurger);
-  }
-  return burgerMenu;
+function changeFeaturedDrink() {
+  featuredDrink = 'The JavaShake';
 }
